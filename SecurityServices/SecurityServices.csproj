@@ -7,6 +7,74 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\FrontEnd\about.html" />
+    <None Include="wwwroot\FrontEnd\assets\css\flex-slider.css" />
+    <None Include="wwwroot\FrontEnd\assets\css\fontawesome.css" />
+    <None Include="wwwroot\FrontEnd\assets\css\owl.css" />
+    <None Include="wwwroot\FrontEnd\assets\css\templatemo-finance-business.css" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\Flaticon.woff" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\flexslider-icon.eot" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\flexslider-icon.svg" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\flexslider-icon.ttf" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\flexslider-icon.woff" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\slick.eot" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\slick.svg" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\slick.ttf" />
+    <None Include="wwwroot\FrontEnd\assets\fonts\slick.woff" />
+    <None Include="wwwroot\FrontEnd\assets\images\about-image.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\client-01.png" />
+    <None Include="wwwroot\FrontEnd\assets\images\fun-facts-bg.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\more-info.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\page-heading-bg.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\service_01.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\service_02.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\service_03.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\single_service_01.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\single_service_02.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\single_service_03.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\single_service_04.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\slide_01.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\slide_02.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\slide_03.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\team_01.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\team_02.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\images\team_03.jpg" />
+    <None Include="wwwroot\FrontEnd\assets\js\accordions.js" />
+    <None Include="wwwroot\FrontEnd\assets\js\custom.js" />
+    <None Include="wwwroot\FrontEnd\assets\js\jquery.singlePageNav.min.js" />
+    <None Include="wwwroot\FrontEnd\assets\js\owl.js" />
+    <None Include="wwwroot\FrontEnd\assets\js\slick.js" />
+    <None Include="wwwroot\FrontEnd\contact.html" />
+    <None Include="wwwroot\FrontEnd\index.html" />
+    <None Include="wwwroot\FrontEnd\one-page.html" />
+    <None Include="wwwroot\FrontEnd\services.html" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\css\bootstrap.css" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\FrontEnd\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\FrontEnd\vendor\jquery\jquery.js" />
+    <None Include="wwwroot\FrontEnd\vendor\jquery\jquery.min.js" />
+    <None Include="wwwroot\FrontEnd\vendor\jquery\jquery.min.map" />
+    <None Include="wwwroot\FrontEnd\vendor\jquery\jquery.slim.js" />
+    <None Include="wwwroot\FrontEnd\vendor\jquery\jquery.slim.min.js" />
+    <None Include="wwwroot\FrontEnd\vendor\jquery\jquery.slim.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.14">
       <PrivateAssets>all</PrivateAssets>
