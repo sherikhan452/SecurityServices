@@ -39,7 +39,6 @@
     <None Include="wwwroot\FrontEnd\assets\images\single_service_02.jpg" />
     <None Include="wwwroot\FrontEnd\assets\images\single_service_03.jpg" />
     <None Include="wwwroot\FrontEnd\assets\images\single_service_04.jpg" />
-    <None Include="wwwroot\FrontEnd\assets\images\slide_01.jpg" />
     <None Include="wwwroot\FrontEnd\assets\images\slide_02.jpg" />
     <None Include="wwwroot\FrontEnd\assets\images\slide_03.jpg" />
     <None Include="wwwroot\FrontEnd\assets\images\team_01.jpg" />
