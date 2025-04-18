@@ -54,33 +54,33 @@
 
                 <ul class="nav">
                     <li class="active">
-                        <a href="dashboard.html">
+                        <a asp-controller="Dashboard" asp-action="Index">
                             <i class="pe-7s-graph"></i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="user.html">
+                        <a asp-controller="EmployeesDB" asp-action="Create">
                             <i class="pe-7s-user"></i>
-                            <p>User Profile</p>
+                            <p>Add Employees</p>
                         </a>
                     </li>
                     <li>
-                        <a href="table.html">
+                        <a asp-controller="ServicesDB" asp-action="Create">
                             <i class="pe-7s-note2"></i>
-                            <p>Table List</p>
+                            <p>Add Services</p>
                         </a>
                     </li>
                     <li>
-                        <a href="typography.html">
+                        <a asp-controller="VacanciesDB" asp-action="Create">
                             <i class="pe-7s-news-paper"></i>
-                            <p>Typography</p>
+                            <p>Add Vacancies</p>
                         </a>
                     </li>
                     <li>
-                        <a href="icons.html">
+                        <a asp-controller="ClientsDB" asp-action="Create">
                             <i class="pe-7s-science"></i>
-                            <p>Icons</p>
+                            <p>Manage Clients</p>
                         </a>
                     </li>
                     <li>
@@ -89,18 +89,18 @@
                             <p>Maps</p>
                         </a>
                     </li>
-                    <li>
+                    @* <li>
                         <a href="notifications.html">
                             <i class="pe-7s-bell"></i>
                             <p>Notifications</p>
                         </a>
-                    </li>
-                    <li class="active-pro">
+                    </li> *@
+                   @*  <li class="active-pro">
                         <a href="upgrade.html">
                             <i class="pe-7s-rocket"></i>
                             <p>Upgrade to PRO</p>
                         </a>
-                    </li>
+                    </li> *@
                 </ul>
             </div>
         </div>
