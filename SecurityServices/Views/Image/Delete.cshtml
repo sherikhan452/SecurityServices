@@ -1,0 +1,17 @@
+﻿@model ImageModel
+
+@{
+    ViewData["Title"] = "Delete Image";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h3>Are you sure you want to delete the image: @Model.FileName?</h3>
+</div>
+
+<form method="post" asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
+</form>

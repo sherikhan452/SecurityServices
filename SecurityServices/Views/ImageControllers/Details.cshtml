@@ -1,0 +1,13 @@
+﻿@model SecurityServices.Models.ImageModelAgain;
+
+@{
+    ViewData["Title"] = "Service Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h3>@Model.Name</h3>
+    <p>@Model.Description</p>
+    <img src="@Url.Action("GetServiceImage", new { id = Model.Id })" width="300" />
+</div>

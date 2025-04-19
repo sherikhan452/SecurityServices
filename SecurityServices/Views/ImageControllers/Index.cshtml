@@ -1,0 +1,33 @@
+﻿@model IEnumerable<SecurityServices.Models.ImageModelAgain>
+
+@{
+    ViewData["Title"] = "Service List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Service Name</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var service in Model)
+        {
+            <tr>
+                <td>@service.Name</td>
+                <td>@service.Description</td>
+                <td><img src="@Url.Action("GetServiceImage", new { id = service.Id })" width="100" height="100" /></td>
+                <td>
+                    <a href="@Url.Action("Details", new { id = service.Id })" class="btn btn-info">View</a>
+                    <a href="@Url.Action("Edit", new { id = service.Id })" class="btn btn-warning">Edit</a>
+                    <a href="@Url.Action("Delete", new { id = service.Id })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -75,7 +75,7 @@
 
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.3.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.14">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -86,6 +86,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
 
 </Project>
