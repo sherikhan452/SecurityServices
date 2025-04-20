@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationContext>(option=>option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection")));
 
-
+builder.Services.AddSession();
 
 
 builder.Services.AddControllersWithViews();
@@ -30,6 +30,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseSession();
 
 app.UseAuthorization();
 

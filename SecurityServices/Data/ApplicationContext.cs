@@ -16,6 +16,7 @@ namespace SecurityServices.Data
         public DbSet<ServiceImage> ServiceImages { get; set; }
         public DbSet<SecurityServices.Models.Testimonial> Testimonial { get; set; } = default!;
         public DbSet<ImageModel> Images { get; set; }
+        
         public DbSet<ImageModelAgain> Imagess { get; set; }
     }
 }
