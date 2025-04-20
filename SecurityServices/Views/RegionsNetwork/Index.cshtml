@@ -1,0 +1,47 @@
+﻿@model IEnumerable<SecurityServices.Models.Region>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NetwordLayout.cshtml";
+}
+
+
+
+
+
+
+<h1>Regions</h1>
+
+<div class="more-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                @foreach (var item in Model)
+                {
+                    <div class="more-info-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="left-image">
+                                    <img src="~/FrontEnd/assets/images/more-info.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 align-self-center">
+                                <div class="right-content">
+                                    <span>@Html.DisplayNameFor(model => model.ContactPerson)</span>
+                                    <h2>Get to know about <em>@Html.DisplayFor(modelItem => item.Name)</em></h2>
+                                    <p>@Html.DisplayNameFor(model => model.Address)<br><br></p>
+                                   @*  <a href="#" class="filled-button">Read More</a> *@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+           <br/>

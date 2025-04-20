@@ -1,0 +1,320 @@
+﻿@model IEnumerable<SecurityServices.Models.Region>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giF93L1rXu0wGSq6+F4pG3jF3i9wR+8HeX+U5R/dcf1wMA4Sz+rLn9U7O0s2kp6h" crossorigin="anonymous">
+
+
+    <title>Finance Business HTML5 Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/FrontEnd/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="~/FrontEnd/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="~/FrontEnd/assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="~/FrontEnd/assets/css/owl.css">
+
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    <!-- Header -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <ul class="left-info">
+                        <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i>090-080-0760</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="right-icons">
+                        <li><a href=https://www.facebook.com /><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://x.com/?lang=en"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=https://pk.linkedin.com /><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.behance.net/"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" asp-controller="FrontEnd" asp-action="Index"><h2>Security Services</h2></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#top">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Aboutus" asp-action="Index">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Services" asp-action="Index">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Vacancies" asp-action="Index">Carrers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Clients" asp-action="Index">Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="one-page.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Our Regions</h1>
+                    <span>North East West South</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="more-info about-info">
+        <div class="container">
+            <div class="row">
+                @* @foreach (var item in Model)
+                {
+
+
+                    <div class="col-md-12">
+                        <div class="more-info-content">
+                            <div class="row">
+                                <div class="col-md-6 align-self-center">
+                                    <div class="right-content">
+
+                                        <img src="~/FrontEnd/assets/images/History2.jpg" alt="">
+                                        <a href="" class="filled-button">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="left-image">
+                                        
+                                        <h2> @Html.DisplayFor(modelItem => item.Name)</h2>
+                                        <h2>  @Html.DisplayNameFor(model => model.Address)</h2>
+                                        <h2> @Html.DisplayFor(modelItem => item.Name)</h2>
+                                        <h2>  @Html.DisplayNameFor(model => model.ContactPerson)</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div> *@
+        </div>
+    </div>
+
+@* 
+    <div class="more-info about-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="more-info-content">
+                        <div class="row">
+                            <div class="col-md-6 align-self-center">
+                                <div class="right-content">
+                                    <span>Chairmen Profile</span>
+                                    <h2>Mr. Alex R. Bennett</h2>
+                                    <p>
+                                        Mr. Alex R. Bennett is the visionary leader and founding chairman of our organization. With over 25 years of experience in leadership, strategy, and community development, Mr. Bennett has been the driving force behind our mission and growth.
+
+                                        A graduate of Harvard Business School, Mr. Bennett began his career in the corporate sector before transitioning to the nonprofit world, where his passion for social impact and innovation led him to establish the organization in 2010.
+
+                                        Under his guidance, the organization has grown from a small local initiative into a nationally recognized platform for change. His leadership style is rooted in collaboration, integrity, and a relentless pursuit of excellence.
+
+                                        Mr. Bennett is also an active speaker, mentor, and advocate for youth empowerment, sustainable development, and inclusive leadership. He continues to inspire the team and stakeholders through his dedication, strategic insight, and unwavering commitment to the values of the organization.
+
+
+
+                                    </p>
+                                    <a href="" class="filled-button">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="left-image">
+                                    <img src="~/FrontEnd/assets/images/Director.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ *@
+
+
+   @*  <div class="more-info about-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="more-info-content">
+                        <div class="row">
+                            <div class="col-md-6 align-self-center">
+                                <div class="right-content">
+                                    <span>Board of Director – Security Services</span>
+                                    <h2>Ms. Karen M. Blake</h2>
+                                    <p>
+                                        Ms. Karen M. Blake brings over two decades of experience in national and corporate security to her role as Director on the Board. With a background in both military intelligence and private sector risk management, Ms. Blake is a recognized leader in developing and overseeing comprehensive security strategies.
+
+                                        She began her career in the U.S. Air Force, serving in various intelligence and operations roles before transitioning to the private sector, where she held senior security positions in multinational corporations. Her areas of expertise include cybersecurity, threat analysis, crisis response, and strategic infrastructure protection.
+
+
+                                    </p>
+                                    <a href="" class="filled-button">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="left-image">
+                                    <img src="~/FrontEnd/assets/images/Board of Director.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ *@
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- Footer Starts Here -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-item">
+                    <h4>Finance Business</h4>
+                    <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
+                    <ul class="social-icons">
+                        <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-item">
+                    <h4>Useful Links</h4>
+                    <ul class="menu-list">
+                        <li><a href="#">Vivamus ut tellus mi</a></li>
+                        <li><a href="#">Nulla nec cursus elit</a></li>
+                        <li><a href="#">Vulputate sed nec</a></li>
+                        <li><a href="#">Cursus augue hasellus</a></li>
+                        <li><a href="#">Lacinia ac sapien</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-item">
+                    <h4>Additional Pages</h4>
+                    <ul class="menu-list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How We Work</a></li>
+                        <li><a href="#">Quick Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-item last-item">
+                    <h4>Contact Us</h4>
+                    <div class="contact-form">
+                        <form id="contact footer-contact" action="" method="post">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="email" type="text" class="form-control" id="email" placeholder="E-Mail Address" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Copyright &copy; 2020 Financial Business Co., Ltd.
+
+                        - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/FrontEnd/vendor/jquery/jquery.min.js"></script>
+    <script src="~/FrontEnd/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="~/FrontEnd/assets/js/custom.js"></script>
+    <script src="~/FrontEnd/assets/js/owl.js"></script>
+    <script src="~/FrontEnd/assets/js/slick.js"></script>
+    <script src="~/FrontEnd/assets/js/accordions.js"></script>
+
+    <script language="text/Javascript">
+
+        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+        function clearField(t){                   //declaring the array outside of the
+        if(! cleared[t.id]){                      // function makes it static and global
+            cleared[t.id] = 1;  // you could use true and false, but that's more typing
+            t.value='';         // with more chance of typos
+            t.style.color='#fff';
+            }
+        }
+    </script>
+
+</body>
+</html>
