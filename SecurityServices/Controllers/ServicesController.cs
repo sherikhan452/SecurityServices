@@ -22,7 +22,19 @@ namespace SecurityServices.Controllers
         // GET: Services
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Services.ToListAsync());
+            var services = await _context.Imagess.ToListAsync();
+            return View(services);
+        }
+
+        public IActionResult GetServiceImage(int id)
+        {
+            var service = _context.Imagess.FirstOrDefault(s => s.Id == id);
+            if (service == null)
+            {
+                return NotFound();
+            }
+
+            return File(service.Data, service.ContentType);
         }
 
         // GET: Services/Details/5

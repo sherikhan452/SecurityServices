@@ -1,11 +1,21 @@
 using Microsoft.EntityFrameworkCore;
 using SecurityServices.Data;
+using SecurityServices.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationContext>(option=>option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection")));
+
+
+
+
+builder.Services.AddControllersWithViews();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

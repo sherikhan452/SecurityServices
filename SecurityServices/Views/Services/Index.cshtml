@@ -1,42 +1,41 @@
-﻿@model IEnumerable<SecurityServices.Models.Service>
+﻿@model IEnumerable<SecurityServices.Models.ImageModelAgain>
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_ServicesLayout.cshtml";
 }
+<div class="single-services">
+    <div class="container">
+        <div class="row" id="tabs">
+        @foreach (var service in Model)
+      {
+        
+           
+            <div class="col-md-4">
+                <ul>
+                    <li><a href='#tabs-1'>@service.Name <i class="fa fa-angle-right"></i></a></li>
+                  
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <section class='tabs-content'>
+                    <article id='tabs-1'>
+                  
+                        
+                            <img src="@Url.Action("GetServiceImage", new { id = service.Id })" />
+                            <h4>@service.Name</h4>
+                            <p>@service.Description</p>
+                     
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ServiceId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ServiceId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ServiceId">Delete</a>
-            </td>
-        </tr>
+                    
+                    </article>
+                   
+                </section>
+            </div>
+        
+    
+ 
+    
 }
-    </tbody>
-</table>
+        </div>
+</div>
