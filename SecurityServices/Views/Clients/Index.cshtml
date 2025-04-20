@@ -5,44 +5,38 @@
     Layout = "~/Views/Shared/_ClientLayout.cshtml";
 }
 
-<h1>Index</h1>
+<div class="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>What they Hired <em>From US</em></h2>
+                    <span>Our greatest clients</span>
+                </div>
+            </div>
+            @foreach (var item in Model)
+                {
+            <div class="col-md-12">
+                
+                <div class="owl-testimonials owl-carousel">
+                   
+                        <div class="testimonial-item">
+                            <div class="inner-content">
+                                <h4>@Html.DisplayFor(modelItem => item.ClientName)</h4>
+                                <span>@Html.DisplayFor(modelItem => item.ServicesAvailed)</span>
+                                <p> @Html.DisplayFor(modelItem => item.StaffAssigned)</p>
+                            </div>
+                            <img src="http://placehold.it/60x60" alt="">
+                        </div>
+                    
+                  
+                   
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ClientName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ServicesAvailed)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StaffAssigned)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ClientName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ServicesAvailed)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StaffAssigned)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ClientId">Edit</a> 
-              @*   <a asp-action="Details" asp-route-id="@item.ClientId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ClientId">Delete</a> *@
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+                </div>
+            
+                    
+        </div>
+        }
+        </div>
+    </div>
+</div>
