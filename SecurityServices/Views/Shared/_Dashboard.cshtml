@@ -36,7 +36,7 @@
 <body>
 
     <div class="wrapper">
-        <div class="sidebar" data-color="purple" data-image="~/dashboard/assets/img/sidebar-5.jpg">
+        <div class="sidebar" data-color="black" data-image="~/dashboard/assets/img/sidebar-5.jpg">
 
             <!--
 
@@ -66,7 +66,7 @@
                         </a>
                     </li>
                     <li>
-                        <a asp-controller="ServicesDB" asp-action="Create">
+                        <a asp-controller="ImageControllers" asp-action="Create">
                             <i class="pe-7s-note2"></i>
                             <p>Add Services</p>
                         </a>
@@ -181,9 +181,10 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">
-                                    <p>Log out</p>
-                                </a>
+                                <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline;">
+                                    <button type="submit" class="btn btn-sm btn-danger">Logout</button>
+                                </form>
+
                             </li>
                             <li class="separator hidden-lg"></li>
                         </ul>
@@ -411,7 +412,7 @@
                 </div>
             </div>
 
-
+@* 
             <footer class="footer">
                 <div class="container-fluid">
                     <nav class="pull-left">
@@ -440,7 +441,7 @@
                     </nav>
                    
                 </div>
-            </footer>
+            </footer> *@
 
         </div>
     </div>

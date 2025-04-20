@@ -35,10 +35,19 @@ namespace SecurityServices.Controllers
                 return View(model);
             }
 
+
+         
+            HttpContext.Session.SetString("username", user.Username);
+            if (user.Username == "admin")
+            {
+                return RedirectToAction("Index", "Dashboard");
+            }
+
             HttpContext.Session.SetString("username", user.Username);
             return RedirectToAction("Index", "Home");
         }
 
+        [HttpPost]
         public IActionResult Logout()
         {
             HttpContext.Session.Remove("username");
