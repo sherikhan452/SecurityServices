@@ -44,7 +44,7 @@ namespace SecurityServices.Controllers
             }
 
             HttpContext.Session.SetString("username", user.Username);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "DashboardTwo");
         }
 
         [HttpPost]
